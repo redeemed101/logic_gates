@@ -6,6 +6,7 @@ pub fn and(a:u8,b:u8) -> u8{
         _ => 0
     }
 }
+
 pub fn xor(a:u8,b:u8) -> u8{
    match(a,b){
     (1,0) | (0,1) => 1,
