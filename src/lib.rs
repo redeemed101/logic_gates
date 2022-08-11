@@ -15,7 +15,6 @@ pub fn xor(a:u8,b:u8) -> u8{
 }
 
 
-
 #[cfg(test)]
 mod tests {
     use crate::{xor,and};
