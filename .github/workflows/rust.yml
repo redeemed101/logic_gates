@@ -10,6 +10,15 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
+  run_npm:
+    name: Run npm on Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm help
   build:
 
     runs-on: ubuntu-latest
